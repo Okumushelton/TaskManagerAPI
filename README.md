@@ -5,5 +5,5 @@ Migrations
 Models, Migrations and Controllers
 
 Pending
-API
+API and
 VUE Front-end
