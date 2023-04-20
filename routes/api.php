@@ -22,10 +22,12 @@ Route::post('login', [PassportAuthController::class, 'login']);
 Route::middleware('auth:api')->group(function () {
     Route::get('get-user', [PassportAuthController::class, 'userInfo']);
 
-    Route::resource('tasks', TasksController::class);
 
 });
 
 Route::middleware('api')->group(function () {
     Route::resource('tasks', TasksController::class);
 });
+
+
+//     Route::resource('tasks', TasksController::class);
